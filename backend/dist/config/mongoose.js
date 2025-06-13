@@ -1,7 +1,8 @@
 import mongoose from 'mongoose';
+//const mongoUri: string = process.env.MONGODB_URI || '';
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/kudos_app', {});
+        await mongoose.connect('mongodb://127.0.0.1:27017/kudos_app', {});
         console.log('MongoDB connected');
     }
     catch (error) {
